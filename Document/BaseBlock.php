@@ -23,7 +23,7 @@ abstract class BaseBlock implements BlockInterface
     protected $name;
 
     /** @PHPCRODM\ParentDocument */
-    protected $parent;
+    protected $parentDocument;
 
     /** @PHPCRODM\Boolean */
     protected $enabled = true;
@@ -210,7 +210,7 @@ abstract class BaseBlock implements BlockInterface
      */
     public function setParentDocument($parent)
     {
-        $this->parent = $parent;
+        $this->parentDocument = $parent;
     }
 
     /**
@@ -220,7 +220,7 @@ abstract class BaseBlock implements BlockInterface
      */
     public function getParentDocument()
     {
-        return $this->parent;
+        return $this->parentDocument;
     }
 
     /**
